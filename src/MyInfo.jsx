@@ -4,12 +4,12 @@ import './MyInfo.css'; // We'll create this CSS file next
 function MyInfo() {
     return (
         <div className="my-info-container">
-            <h1>Karina Chernobai</h1> {/* Replace with your full name */}
+            <h1>Karina Chernobai</h1>
 
             <p className="bio">
                 I'm a student learning web development with React. I enjoy creating interactive
                 user interfaces and learning new technologies. In my free time, I like to
-                explore design patterns and improve my coding skills.
+                play tennis and write poetry.
             </p>
 
             <h2>Places I'd Like to Visit:</h2>
