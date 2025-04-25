@@ -1,32 +1,89 @@
 .my-info-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.my-info-container h1 {
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+}
+
+h1 {
     color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
+    margin: 0;
+    font-size: 2.2rem;
 }
 
 .bio {
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.places-list {
-    margin-top: 20px;
-    padding-left: 20px;
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
 }
 
-.places-list li {
-    margin-bottom: 10px;
-    line-height: 1.5;
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
 }
 
-.places-list strong {
+.place-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+}
+
+.place-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.place-info {
+    padding: 15px;
+}
+
+.place-info h3 {
     color: #2980b9;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.place-info p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
 }
