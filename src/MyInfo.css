@@ -87,3 +87,34 @@ h2 {
     color: #555;
     line-height: 1.5;
 }
+
+/* Add these styles to your existing MyInfo.css */
+
+.like-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.like-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.place-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.place-info p {
+    flex-grow: 1;
+}
