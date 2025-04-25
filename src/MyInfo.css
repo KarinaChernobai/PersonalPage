@@ -1,4 +1,4 @@
-.my-info-container {
+.personal-info-container {
     max-width: 900px;
     margin: 0 auto;
     padding: 30px;
@@ -47,7 +47,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.places-grid {
+.places {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
@@ -73,6 +73,8 @@ h2 {
 }
 
 .place-info {
+    display: flex;
+    flex-direction: column;
     padding: 15px;
 }
 
@@ -86,12 +88,11 @@ h2 {
     margin: 0;
     color: #555;
     line-height: 1.5;
+    flex-grow: 1;
 }
 
-/* Add these styles to your existing MyInfo.css */
-
 .like-button {
-    background-color: #4CAF50; /* Green background */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 8px 16px;
@@ -107,14 +108,5 @@ h2 {
 }
 
 .like-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
-
-.place-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.place-info p {
-    flex-grow: 1;
+    background-color: #45a049;
 }

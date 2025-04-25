@@ -2,23 +2,25 @@ import React, { useState } from 'react';
 import './MyInfo.css';
 
 function MyInfo() {
-    // State for like counts for each place
+    // likes - the current state
+    // setLikes - function to update this state
     const [likes, setLikes] = useState({
         japan: 0,
         italy: 0,
         newZealand: 0
     });
 
-    // Function to handle likes
     const handleLike = (place) => {
         setLikes(prevLikes => ({
+            // immutability - we never modify the original state object
             ...prevLikes,
+            // use the value of the place variable as the property name
             [place]: prevLikes[place] + 1
         }));
     };
 
     return (
-        <div className="my-info-container">
+        <div className="personal-info-container">
             <div className="profile-header">
                 <img
                     src="https://api.dicebear.com/7.x/adventurer/svg?seed=Jane"
@@ -31,12 +33,12 @@ function MyInfo() {
             <p className="bio">
                 I'm a student learning web development with React. I enjoy creating interactive
                 user interfaces and learning new technologies. In my free time, I like to
-                explore design patterns and improve my coding skills.
+                play tennis and write poetry.
             </p>
 
             <h2>Places I'd Like to Visit:</h2>
 
-            <div className="places-grid">
+            <div className="places">
                 {/* Japan Card */}
                 <div className="place-card">
                     <img src="../public/images/places/japan.jpg" alt="Japan" className="place-image" />
